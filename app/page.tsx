@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Urbanist } from "next/font/google";
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -8,10 +7,10 @@ const patentLink =
 export default function Home() {
     return (
         <div
-            className={`${urbanist.className} container mx-auto h-screen max-w-4xl text-zinc-100 sm:overflow-y-auto`}
+            className={`${urbanist.className} container mx-auto max-w-4xl overflow-y-auto bg-zinc-100`}
         >
             <div className="flex h-full flex-col md:flex-row">
-                <div className="flex flex-none flex-col gap-1 bg-blue-600 md:w-72">
+                <div className="flex flex-none flex-col gap-1 bg-blue-600 text-zinc-100 md:w-72">
                     <div className="top-0 left-0 bg-blue-600">
                         <h1 className="px-3 pt-2 text-4xl font-semibold">
                             Hernan Alamo
@@ -81,7 +80,7 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <main className="h-full bg-zinc-100  px-4  pt-5 font-medium  text-zinc-700 md:overflow-y-auto">
+                <main className="h-full px-4  pt-5 font-medium  text-zinc-700 md:overflow-y-auto">
                     <p className="text-xl leading-8">
                         Experienced{" "}
                         <span className="font-bold text-zinc-800">
