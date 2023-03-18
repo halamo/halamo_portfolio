@@ -8,17 +8,20 @@ const patentLink =
 export default function Home() {
     return (
         <div
-            className={`${urbanist.className} container mx-auto h-screen text-zinc-100`}
+            className={`${urbanist.className} container mx-auto h-screen max-w-4xl text-zinc-100 sm:overflow-y-auto`}
         >
-            <div className="grid h-full grid-cols-7 gap-2">
-                <div className="col-span-2 flex flex-none flex-col gap-1 bg-blue-600">
-                    <h1 className="px-3 pt-2 text-4xl font-semibold ">
-                        Hernan Alamo
-                    </h1>
+            <div className="flex h-full flex-col md:flex-row">
+                <div className="flex flex-none flex-col gap-1 bg-blue-600 md:w-72">
+                    <div className="top-0 left-0 bg-blue-600">
+                        <h1 className="px-3 pt-2 text-4xl font-semibold">
+                            Hernan Alamo
+                        </h1>
 
-                    <h2 className="px-3 pt-0 text-xl font-semibold text-amber-300">
-                        Frontend Software Engineer
-                    </h2>
+                        <h2 className="px-3 pt-0 text-xl font-semibold text-amber-300">
+                            Frontend Software Engineer
+                        </h2>
+                    </div>
+
                     <div className="mt-4 h-8 bg-blue-800">
                         <span className="p-3 align-text-top font-bold ">
                             Personal Info
@@ -53,10 +56,10 @@ export default function Home() {
                             Achievements
                         </span>
                     </div>
-                    <div className="flex items-center pt-3">
+                    <div className="flex py-3">
                         <a
                             href={patentLink}
-                            className="align px-3 text-sm font-normal  no-underline hover:underline"
+                            className="align px-3 text-sm  font-normal no-underline hover:underline"
                         >
                             Patent Number: US 9682315 B1
                         </a>
@@ -67,7 +70,7 @@ export default function Home() {
                                 viewBox="0 0 24 24"
                                 strokeWidth={1.5}
                                 stroke="currentColor"
-                                className="h-5 w-5 stroke-amber-300 hover:stroke-amber-100"
+                                className="h-4 w-4 stroke-amber-300 hover:stroke-amber-100 "
                             >
                                 <path
                                     strokeLinecap="round"
@@ -78,7 +81,7 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <main className="col-span-5 px-2 pt-5  font-medium  text-zinc-700">
+                <main className="h-full bg-zinc-100  px-4  pt-5 font-medium  text-zinc-700 md:overflow-y-auto">
                     <p className="text-xl leading-8">
                         Experienced{" "}
                         <span className="font-bold text-zinc-800">
@@ -99,14 +102,18 @@ export default function Home() {
                     <h2 className="pt-4 text-xl font-bold text-blue-800">
                         Experience
                     </h2>
-                    <div className="flex justify-between pt-4">
+                    <div className="flex flex-col justify-between pt-4 md:flex-row">
                         <h2>
                             <span className="font-semibold">
                                 Senior Software Engineer
                             </span>{" "}
-                            - CSDisco Austin, TX
+                            <br className="inline md:hidden" />
+                            <span className="hidden md:inline"> - </span>
+                            CSDisco Austin, TX
                         </h2>
-                        <span>2019-2022</span>
+                        <span className="whitespace-nowrap md:text-right">
+                            2019-2022
+                        </span>
                     </div>
                     <ul className="list-disc pl-5 pt-2">
                         <li>
@@ -133,14 +140,18 @@ export default function Home() {
                         </li>
                     </ul>
 
-                    <div className="flex justify-between pt-4">
+                    <div className="flex flex-col justify-between pt-4 md:flex-row">
                         <h2>
                             <span className="font-semibold">
                                 Senior Software Engineer
                             </span>{" "}
-                            - CCC Information Services, Austin, TX
+                            <br className="inline md:hidden" />
+                            <span className="hidden md:inline"> - </span>
+                            CCC Information Services, Austin, TX
                         </h2>
-                        <span>2017-2019</span>
+                        <span className="whitespace-nowrap md:text-right">
+                            2017-2019
+                        </span>
                     </div>
                     <ul className="list-disc pl-5 pt-2">
                         <li>
@@ -163,14 +174,18 @@ export default function Home() {
                         </li>
                     </ul>
 
-                    <div className="flex justify-between pt-4">
+                    <div className="flex flex-col justify-between pt-4 md:flex-row">
                         <h2>
                             <span className="font-semibold">
                                 Senior Software Engineer
                             </span>{" "}
-                            - CompassLearning, Austin, TX
+                            <br className="inline md:hidden" />
+                            <span className="hidden md:inline"> - </span>
+                            CompassLearning, Austin, TX
                         </h2>
-                        <span>2013-2017</span>
+                        <span className="whitespace-nowrap md:text-right">
+                            2013-2017
+                        </span>
                     </div>
                     <ul className="list-disc pl-5 pt-2">
                         <li>
@@ -198,14 +213,18 @@ export default function Home() {
                         </li>
                     </ul>
 
-                    <div className="flex justify-between pt-4">
+                    <div className="flex flex-col justify-between pt-4 md:flex-row">
                         <h2>
                             <span className="font-semibold">
                                 Senior Software Engineer
                             </span>{" "}
-                            - Zynga, Austin, TX
+                            <br className="inline md:hidden" />
+                            <span className="hidden md:inline"> - </span>Zynga,
+                            Austin, TX
                         </h2>
-                        <span>2009-2013</span>
+                        <span className="whitespace-nowrap md:text-right ">
+                            2009-2013
+                        </span>
                     </div>
                     <ul className="list-disc pl-5 pt-2">
                         <li>
