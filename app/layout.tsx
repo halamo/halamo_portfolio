@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
     title: "Resume - Hernan Alamo",
@@ -13,6 +14,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className="bg-zinc-50">{children}</body>
+            <Analytics />
         </html>
     );
 }
