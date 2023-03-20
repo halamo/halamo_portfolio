@@ -6,11 +6,14 @@ const patentLink =
 
 export default function Home() {
     return (
-        <div
-            className={`${urbanist.className} container mx-auto max-w-4xl overflow-y-auto bg-zinc-100`}
+        <main
+            className={`${urbanist.className} container mx-auto h-full max-w-4xl bg-zinc-100`}
         >
-            <div className="flex h-screen flex-col md:flex-row">
-                <div className="flex flex-none flex-col gap-1 bg-blue-600 text-zinc-100 md:w-72">
+            <div className="flex h-full flex-col md:flex-row">
+                <section
+                    aria-label="Personal Info"
+                    className="flex flex-none flex-col gap-1 bg-blue-600 text-zinc-100 md:w-72 "
+                >
                     <div className="top-0 left-0 bg-blue-600">
                         <h1 className="px-3 pt-2 text-4xl font-semibold">
                             Hernan Alamo
@@ -79,16 +82,19 @@ export default function Home() {
                             </svg>
                         </a>
                     </div>
-                </div>
-                <main className="h-screen  px-4  pt-5 font-medium  text-zinc-700 md:overflow-y-auto">
-                    <p className="text-xl leading-8">
+                </section>
+                <section
+                    aria-label="Objective, skills and experience"
+                    className="h-screen  px-4 pt-5  font-medium text-zinc-700 md:overflow-y-auto"
+                >
+                    <h1 className="text-xl leading-8">
                         Experienced{" "}
                         <span className="font-bold text-zinc-800">
                             Frontend Software Engineer
                         </span>{" "}
                         specializing in creating dynamic UI / UX systems using
                         OOP, Functional Programming, and modern web tools.{" "}
-                    </p>
+                    </h1>
                     <h2 className="pt-4 text-xl font-bold text-blue-800">
                         Skills
                     </h2>
@@ -102,14 +108,14 @@ export default function Home() {
                         Experience
                     </h2>
                     <div className="flex flex-col justify-between pt-4 md:flex-row">
-                        <h2>
+                        <h3>
                             <span className="font-semibold">
                                 Senior Software Engineer
                             </span>{" "}
                             <br className="inline md:hidden" />
                             <span className="hidden md:inline"> - </span>
                             CSDisco Austin, TX
-                        </h2>
+                        </h3>
                         <span className="whitespace-nowrap md:text-right">
                             2019-2022
                         </span>
@@ -140,14 +146,14 @@ export default function Home() {
                     </ul>
 
                     <div className="flex flex-col justify-between pt-4 md:flex-row">
-                        <h2>
+                        <h3>
                             <span className="font-semibold">
                                 Senior Software Engineer
                             </span>{" "}
                             <br className="inline md:hidden" />
                             <span className="hidden md:inline"> - </span>
                             CCC Information Services, Austin, TX
-                        </h2>
+                        </h3>
                         <span className="whitespace-nowrap md:text-right">
                             2017-2019
                         </span>
@@ -174,14 +180,14 @@ export default function Home() {
                     </ul>
 
                     <div className="flex flex-col justify-between pt-4 md:flex-row">
-                        <h2>
+                        <h3>
                             <span className="font-semibold">
                                 Senior Software Engineer
                             </span>{" "}
                             <br className="inline md:hidden" />
                             <span className="hidden md:inline"> - </span>
                             CompassLearning, Austin, TX
-                        </h2>
+                        </h3>
                         <span className="whitespace-nowrap md:text-right">
                             2013-2017
                         </span>
@@ -213,19 +219,19 @@ export default function Home() {
                     </ul>
 
                     <div className="flex flex-col justify-between pt-4 md:flex-row">
-                        <h2>
+                        <h3>
                             <span className="font-semibold">
                                 Senior Software Engineer
                             </span>{" "}
                             <br className="inline md:hidden" />
                             <span className="hidden md:inline"> - </span>Zynga,
                             Austin, TX
-                        </h2>
+                        </h3>
                         <span className="whitespace-nowrap md:text-right ">
                             2009-2013
                         </span>
                     </div>
-                    <ul className="list-disc pl-5 pt-2">
+                    <ul className="list-disc py-2 pl-5">
                         <li>
                             Created patented UI / UX designs and functionality
                             for social systems.
@@ -255,8 +261,8 @@ export default function Home() {
                             Cocosbuilder.
                         </li>
                     </ul>
-                </main>
+                </section>
             </div>
-        </div>
+        </main>
     );
 }
