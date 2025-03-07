@@ -92,7 +92,7 @@ export default function Home() {
                 <p className="pt-4">
                     React, Angular 2+, Typescript, Javascript, CSS 3, SASS,
                     Bootstrap, Handlebars, JQuery, Underscore, Lodash, Ramda,
-                    JSON, XML, NPM, Jest, Cypress, UI/UX design, Photoshop.
+                    JSON, XML, NPM, Jest, Cypress, UI/UX design.
                 </p>
                 <h2 className="pt-4 text-xl font-bold text-blue-800">
                     Experience
