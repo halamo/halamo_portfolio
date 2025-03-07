@@ -24,43 +24,37 @@ export default function Home() {
                 </div>
 
                 <div className="mt-4 h-8 bg-blue-800">
-                    <span className="p-3 align-text-top font-bold ">
+                    <span className="p-3 align-text-top font-bold">
                         Personal Info
                     </span>
                 </div>
-                <p className="px-3 pt-3 text-sm font-bold ">Address</p>
-                <p className="px-3 text-sm font-normal ">
-                    Fuquay-Varina, NC 27526
-                </p>
-                <p className="px-3 pt-3 text-sm font-bold ">Email</p>
+                <p className="px-3 pt-3 text-sm font-bold">Address</p>
+                <p className="px-3 text-sm font-normal">Austin, TX</p>
+                <p className="px-3 pt-3 text-sm font-bold">Email</p>
                 <div className="px-3">
                     <a
                         href="mailto:contact@HernanAlamo.dev"
-                        className="text-sm font-normal  no-underline hover:underline"
+                        className="text-sm font-normal no-underline hover:underline"
                     >
                         contact@HernanAlamo.dev
                     </a>
                 </div>
                 <div className="mt-4 h-8 bg-blue-800">
-                    <span className="p-3 align-text-top font-bold ">
+                    <span className="p-3 align-text-top font-bold">
                         Languages
                     </span>
                 </div>
-                <p className="px-3 pt-3 text-sm font-normal ">
-                    English (Native)
-                </p>
-                <p className="px-3 pt-2 text-sm font-normal ">
-                    Spanish (Conversational)
-                </p>
+                <p className="px-3 pt-3 text-sm font-normal">English</p>
+                <p className="px-3 pt-2 text-sm font-normal">Spanish</p>
                 <div className="mt-4 h-8 bg-blue-800">
-                    <span className="p-3 align-text-top font-bold ">
+                    <span className="p-3 align-text-top font-bold">
                         Achievements
                     </span>
                 </div>
                 <div className="flex py-3">
                     <a
                         href={patentLink}
-                        className="align px-3 text-sm  font-normal no-underline hover:underline"
+                        className="align px-3 text-sm font-normal no-underline hover:underline"
                     >
                         Patent Number: US 9682315 B1
                     </a>
@@ -71,7 +65,7 @@ export default function Home() {
                             viewBox="0 0 24 24"
                             strokeWidth={1.5}
                             stroke="currentColor"
-                            className="h-4 w-4 stroke-amber-300 hover:stroke-amber-100 "
+                            className="h-4 w-4 stroke-amber-300 hover:stroke-amber-100"
                         >
                             <path
                                 strokeLinecap="round"
@@ -84,7 +78,7 @@ export default function Home() {
             </section>
             <section
                 aria-label="Objective, skills and experience"
-                className="h-screen  px-4 pt-5  font-medium text-zinc-700 md:overflow-y-auto"
+                className="h-screen px-4 pt-5 font-medium text-zinc-700 md:overflow-y-auto"
             >
                 <h1 className="text-xl leading-8">
                     Experienced{" "}
@@ -95,7 +89,7 @@ export default function Home() {
                     Functional Programming, and modern web tools.{" "}
                 </h1>
                 <h2 className="pt-4 text-xl font-bold text-blue-800">Skills</h2>
-                <p className="pt-4 ">
+                <p className="pt-4">
                     React, Angular 2+, Typescript, Javascript, CSS 3, SASS,
                     Bootstrap, Handlebars, JQuery, Underscore, Lodash, Ramda,
                     JSON, XML, NPM, Jest, Cypress, UI/UX design, Photoshop.
@@ -116,7 +110,7 @@ export default function Home() {
                         2019-2022
                     </span>
                 </div>
-                <ul className="list-disc pl-5 pt-2">
+                <ul className="list-disc pt-2 pl-5">
                     <li>
                         Designed and developed various complex UI systems and
                         components to implement product features using React,
@@ -154,7 +148,7 @@ export default function Home() {
                         2017-2019
                     </span>
                 </div>
-                <ul className="list-disc pl-5 pt-2">
+                <ul className="list-disc pt-2 pl-5">
                     <li>
                         Created UI for internal tools to consume and manipulate
                         data from REST service.
@@ -186,7 +180,7 @@ export default function Home() {
                         2013-2017
                     </span>
                 </div>
-                <ul className="list-disc pl-5 pt-2">
+                <ul className="list-disc pt-2 pl-5">
                     <li>
                         Performed functional improvements, implemented new
                         features from design docs, and cleaned up legacy code on
@@ -219,7 +213,7 @@ export default function Home() {
                         <span className="hidden md:inline"> - </span>Zynga,
                         Austin, TX
                     </h3>
-                    <span className="whitespace-nowrap md:text-right ">
+                    <span className="whitespace-nowrap md:text-right">
                         2009-2013
                     </span>
                 </div>
